@@ -5,11 +5,14 @@ class PagesController < ApplicationController
   end
 
   def about
+    render "about"
   end
 
   def works
+    render "works"
   end
 
   def skills
+    render "skills"
   end
 end

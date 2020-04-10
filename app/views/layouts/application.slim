@@ -10,30 +10,4 @@ html
   body.p-home
     // TODO inert h2
     = render partial: 'components/header'
-    canvas
-    article.o-article
-      div.m-card
-        div.a-picture
-          = image_tag  "gixxer1.jpg"
-          /  style="background: url(gixxer1.jpg)"
-        h2.a-title What's new
-        h3.a-title.-sub Show more
-      div.m-card
-        div.a-picture
-          = image_tag  "gixxer1.jpg"
-          /  style="background: url(gixxer1.jpg)"
-        h2.a-title About
-        h3.a-title.-sub Show more
-      div.m-card
-        div.a-picture
-          = image_tag  "gixxer1.jpg"
-          /  style="background: url(gixxer1.jpg)"
-        h2.a-title Works
-        h3.a-title.-sub Show more
-      div.m-card
-        div.a-picture
-          = image_tag  "gixxer1.jpg"
-          /  style="background: url(gixxer1.jpg)"
-          h2.a-title Skills
-          h3.a-title.-sub Show more
-
+    = yield
