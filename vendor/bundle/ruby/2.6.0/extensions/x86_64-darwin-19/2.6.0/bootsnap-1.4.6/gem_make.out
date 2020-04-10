@@ -1,0 +1,17 @@
+current directory: /Users/aknk/dev/my_portfolio/my-portfolio/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
+/Users/aknk/.rbenv/versions/2.6.3/bin/ruby -I /Users/aknk/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200410-13629-h7tw8i.rb extconf.rb
+creating Makefile
+
+current directory: /Users/aknk/dev/my_portfolio/my-portfolio/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/aknk/dev/my_portfolio/my-portfolio/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+ld: warning: directory not found for option '-L/usr/local/opt/openssl@1.1/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/openssl@1.1/lib'
+
+current directory: /Users/aknk/dev/my_portfolio/my-portfolio/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20200410-13629-2yl06m/bootsnap
