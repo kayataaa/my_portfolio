@@ -1,34 +1,26 @@
 canvas
 article.o-article
-  div.m-card
-    div.a-picture
-      = image_tag  "gixxer1.jpg"
-    h2.a-title What's new
-    h3.a-title.-sub Show more
-  div.m-card
-    div.a-picture
-      = image_tag  "gixxer1.jpg"
-    h2.a-title About
-    h3.a-title.-sub Show more
-  div.m-card
-    div.a-picture
-      = image_tag  "gixxer1.jpg"
-    h2.a-title Works
-    h3.a-title.-sub Show more
-  div.m-card
-    div.a-picture
-      = image_tag  "gixxer1.jpg"
-    h2.a-title Skills
-    h3.a-title.-sub Show more
-  div.m-card
-    div.a-picture
-      = image_tag  "gixxer1.jpg"
-    h2.a-title Works
-    h3.a-title.-sub Show more
-  div.m-card
-    div.a-picture
-      = image_tag  "gixxer1.jpg"
-    h2.a-title Skills
-    h3.a-title.-sub Show more
-
-
+  = link_to("/", class: 'a-link') do
+    div.m-card
+      div.a-picture
+        = image_tag  "sakura.jpg"
+      h2.a-title What's new
+      h3.a-title.-sub Show more
+  = link_to("/about", class: 'a-link') do
+    div.m-card
+      div.a-picture
+        = image_tag  "gixxer1.jpg"
+      h2.a-title About
+      h3.a-title.-sub Show more
+  = link_to("/works", class: 'a-link') do
+    div.m-card
+      div.a-picture
+        = image_tag  "person-using-macbook-pro-on-person-s-lap-1181298.jpg"
+      h2.a-title Works
+      h3.a-title.-sub Show more
+  = link_to("/", class: 'a-link') do
+    div.m-card
+      div.a-picture
+        = image_tag  "code-coder-coding-computer-270404.jpg"
+      h2.a-title Skills
+      h3.a-title.-sub Show more

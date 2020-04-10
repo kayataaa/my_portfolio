@@ -23,8 +23,9 @@
         width: 30px;
       }
       .a-title {
+        text-indent: 1em;
         &.-sub {
-          text-indent: 1em;
+          text-indent: 2em;
         }
       }
     }

@@ -2,13 +2,18 @@
   background: #fff;
   height: 350px;
   width: 100%;
+  img {
+    height: 348px;
+    width: 348px;
+    object-fit: contain;
+  }
   &.-square {
     height: 348px;
     width: 348px;
     img {
       height: 348px;
       width: 348px;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 }
