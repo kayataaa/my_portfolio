@@ -1,0 +1,29 @@
+.p-home {
+  background: #655F5A;
+  margin: 0 80px;
+  .o-article {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .m-card {
+      margin-right: 20px;
+      margin-bottom: 15px;
+      opacity: 0.6;
+      width: 348px;
+      .a-picture {
+        position: relative;
+      }
+      .a-title:after {
+        background: red;
+        height: 20px;
+        width: 30px;
+      }
+      .a-title {
+        &.-sub {
+          text-indent: 1em;
+        }
+      }
+    }
+  }
+}
