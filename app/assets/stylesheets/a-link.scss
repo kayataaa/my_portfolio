@@ -1,6 +1,14 @@
 .a-link {
   color: #707070;
+  :hover {
+    color: #414040;
+    transition: 0.3s;
+  }
   &.-nav {
     color: #fff;
+    :hover {
+      color: rgba(255, 255, 255, 0.356)
+
+    }
   }
 }

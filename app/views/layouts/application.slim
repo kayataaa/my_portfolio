@@ -7,7 +7,10 @@ html
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'pages/index'
     script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+    link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" type="image/png" /
+    link href="/icon-192x192.png" rel="icon" type="image/png" /
   body.p-home
     // TODO inert h2
     = render partial: 'components/header'
