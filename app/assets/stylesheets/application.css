@@ -14,7 +14,7 @@
  *= require_self
  */
 body {
-  font-family: Myanmar Sangam MN;
+  font-family: 'monterey', Myanmar Sangam MN;
   margin: initial;
 }
 
@@ -25,4 +25,3 @@ li {
 a {
   text-decoration: none;
 }
-
