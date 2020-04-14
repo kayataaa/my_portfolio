@@ -1,6 +1,16 @@
 import { gsap, TweenMax } from "gsap";
+import Vue from 'vue'
+import App from '../../app.vue'
 
-function load() {
+
+function appendVueComp() {
+  const app = new Vue({
+    render: h => h(App)
+  }).$mount()
+  document.body.appendChild(app.$el)
+}
+
+function logo() {
   const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5});
   const logo = document.querySelectorAll(".a-logo");
   var grid = [7,15];
@@ -23,5 +33,9 @@ function load() {
   });
 }
 
+function load() {
+  appendVueComp();
+  logo();
+}
 
 window.onload = load;
