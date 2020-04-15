@@ -7,6 +7,13 @@
     padding: 5px 13px;
     margin-right: 5px;
   }
+  &.-octcat {
+    background: initial;
+    height: 30px;
+    width: 30px;
+    padding: initial;
+    margin-left: 1em;
+  }
   &__wrap {
     display: flex;
   }

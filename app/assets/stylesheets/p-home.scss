@@ -14,21 +14,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     .m-card {
+      box-sizing: border-box;
       margin-right: 20px;
       margin-bottom: 15px;
       opacity: 0.6;
       width: 348px;
+      padding: 10px 10px 35px 10px;
+      position: relative;
       .a-picture {
         position: relative;
       }
-      .a-title:after {
-        background: red;
-        height: 20px;
-        width: 30px;
-      }
       .a-title {
-        text-indent: 1em;
         &.-sub {
+          text-indent: 2em;
+        }
+        &.-desc {
+          position: absolute;
+          right: 1em;
+        }
+        &.-middleDesc {
+          font-size: 12px;
+          display: block;
           text-indent: 2em;
         }
       }

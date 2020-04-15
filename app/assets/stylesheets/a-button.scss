@@ -3,4 +3,7 @@
   border: #655F5A double;
   padding: 7px 15px;
   outline: none;
+  &.-inline {
+    display: inline-block;
+  }
 }
