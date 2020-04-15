@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about'
   get '/works', to: 'pages#works'
   get '/skills', to: 'pages#skills'
+  get '/articles/create', to: 'articles#create'
   # get 'pages/index'
   # get 'pages/about'
   # get 'pages/works'

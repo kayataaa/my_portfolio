@@ -1,2 +1,9 @@
 h1 Articles#create
 p Find me in app/views/articles/create.html.slim
+
+= form_with(url: "/create", method: "post") do
+  = label_tag(:description, "description")
+  = text_area_tag(:description, "content", size: "20x10")
+  = label_tag(:sub_description, "sub_description")
+  = text_area_tag(:sub_description, "content", size: "20x10")
+  = submit_tag("create")
