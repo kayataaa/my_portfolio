@@ -1,4 +1,6 @@
 / canvas
+button.a-button @click="event"
+  | o
 article.o-article
   .a-picture.-circle
     = image_tag  "gixxer1.jpg"
@@ -6,13 +8,14 @@ article.o-article
     | Thank you to see my homepage. My name is Kayata, I'm engineer.
     | I have been developing for 3 years. If you want to know me, please check "About".
     | Or you can know about my work from "Works", about developing skill is written at "Skills".
-article.o-article
-  = link_to("/", class: 'a-link') do
-    div.m-card
-      div.a-picture
-        = image_tag  "sakura.jpg"
-      h2.a-title What's new
-      h3.a-title.-sub Show more
+article.o-article.-sec
+  div.new-card
+  / = link_to("/", class: 'a-link') do
+  / div.m-card.-new
+  /   div.a-picture
+  /     = image_tag  "sakura.jpg"
+  /   h2.a-title What's new
+  /   h3.a-title.-sub Show more
   = link_to("/about", class: 'a-link') do
     div.m-card
       div.a-picture

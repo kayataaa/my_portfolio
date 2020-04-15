@@ -1,0 +1,18 @@
+.m-modal {
+  &__bkground {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  height: 300px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.774);
+  font-size: 30px;
+  transition: opacity 0.3s ease;
+}
