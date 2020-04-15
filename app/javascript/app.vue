@@ -1,10 +1,11 @@
 <template>
-  <div id="app" class="m-card -new">
+  <div class="m-card">
     <div class="a-picture">
       <img v-bind:src="require('../assets/images/sakura.jpg')"/>
     </div>
-    <h2>What's new</h2>
-    <button class="a-button" @click="clickEvent">x</button>
+    <h2 class="a-title">What's new</h2>
+    <h3 class="a-title -sub">2020.04.15 | モーダルを更新しました！</h3>
+    <button class="a-button -inline" @click="clickEvent">...</button>
     <modal @from-child="handler()" v-show="show"></modal>
   </div>
 </template>

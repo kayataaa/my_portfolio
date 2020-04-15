@@ -3,50 +3,61 @@ article.o-article
   div.m-card
     div.a-picture
       = image_tag  "kbs2.png"
-      /  style="background: url(gixxer1.jpg)"
     h2.a-title Kitchen Brothers
-    h3.a-title.-sub Show more
+    h3.a-title.-sub 飲食店向けメディアサイト
+    span.a-title.-desc Ruby on Rails5, slim, scss, jQuery...
   div.m-card
     div.a-picture
       = image_tag  "order.png"
-      /  style="background: url(gixxer1.jpg)"
     h2.a-title Kitchen Brothers365
-    h3.a-title.-sub Show more
+    h3.a-title.-sub 飲食店向け受発注システム
+    span.a-title.-desc Ruby on Rails5, slim, scss, jQuery...
   div.m-card
     div.a-picture
       = image_tag  "medcare.png"
-      /  style="background: url(gixxer1.jpg)"
     h2.a-title Medcare
-    h3.a-title.-sub Show more
+    h3.a-title.-sub オンライン診療サービス
+    span.a-title.-desc Ruby on Rails5, Angular, Vue.js...
+
   div.m-card
     div.a-picture
       = image_tag  "ps.png"
-      /  style="background: url(gixxer1.jpg)"
     h2.a-title Price Search
-    h3.a-title.-sub Show more
+    h3.a-title.-sub プライシングツール
+    span.a-title.-desc Java, Vue.js...
+
 h2.a-title.-pageTop Private
 article.o-article
   div.m-card
     div.a-picture
       = image_tag  "hanami.png"
-      /  style="background: url(gixxer1.jpg)"
     h2.a-title Hanami
-    h3.a-title.-sub Show more
+    = link_to  "https://github.com/ixap2i/hanami" do
+      = image_tag  "github.jpg", class: "a-logo -octcat"
+      span On GitHub
+
   div.m-card
     div.a-picture
       = image_tag  "andro.png"
-      /  style="background: url(gixxer1.jpg)"
     h2.a-title Instagram Sample App
-    h3.a-title.-sub Show more
+    = link_to  "https://github.com/ixap2i/instagram-sample-app" do
+      = image_tag  "github.jpg", class: "a-logo -octcat"
+      span On GitHub
+
   div.m-card
     div.a-picture
       = image_tag  "msa.png"
       /  style="background: url(gixxer1.jpg)"
     h2.a-title My Single App
-    h3.a-title.-sub Show more
+    = link_to  "https://github.com/ixap2i/single-page" do
+      = image_tag  "github.jpg", class: "a-logo -octcat"
+      span On GitHub
+
   div.m-card
     div.a-picture
       = image_tag  "floap.png"
-      /  style="background: url(gixxer1.jpg)"
     h2.a-title Floap
-    h3.a-title.-sub Show more
+    = link_to  "https://github.com/ixap2i/floap" do
+
+      = image_tag  "github.jpg", class: "a-logo -octcat"
+      span On GitHub
