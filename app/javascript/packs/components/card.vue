@@ -1,7 +1,7 @@
 <template>
   <div class="m-card">
     <div class="a-picture">
-
+      test
     </div>
     <h2 class="a-title">What's new</h2>
     <h3 class="a-title -sub">2020.04.15 | モーダルを更新しました！</h3>

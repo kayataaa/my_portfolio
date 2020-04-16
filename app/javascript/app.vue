@@ -5,7 +5,7 @@
     </div>
     <h2 class="a-title">What's new</h2>
     <h3 class="a-title -sub">2020.04.15 | モーダルを更新しました！</h3>
-    <button class="a-button -inline" @click="clickEvent">...</button>
+    <button @click="clickEvent">...</button>
     <modal @from-child="handler()" v-show="show"></modal>
   </div>
 </template>

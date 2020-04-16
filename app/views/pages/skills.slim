@@ -1,32 +1,4 @@
 h2.a-title.-pageTop Skills
 article.o-article
-  div.m-card
-    div.a-picture
-      = image_tag  "woman-in-black-pants-sitting-on-red-metal-railings-3812800.jpg"
-    h2.a-title Ruby on Rails
-    h3.a-title.-sub Show more
-  div.m-card
-    div.a-picture
-      = image_tag  "code-coder-coding-computer-270404.jpg"
-    h2.a-title HTML5 + CSS3
-    h3.a-title.-sub Use HTML5 for 3 years
-  div.m-card
-    div.a-picture
-      = image_tag  "seo-758264_640.jpg"
-    h2.a-title SEO
-    h3.a-title.-sub Show more
-  div.m-card
-    div.a-picture
-      = image_tag  "sakura.jpg"
-    h2.a-title Vue.js
-    h3.a-title.-sub Show more
-  div.m-card
-    div.a-picture
-      = image_tag  "person-using-macbook-pro-on-person-s-lap-1181298.jpg"
-    h2.a-title Works
-    h3.a-title.-sub Show more
-  div.m-card
-    div.a-picture
-      = image_tag  "sakura2.jpg"
-    h2.a-title Other
-    h3.a-title.-sub Adobe XD Photoshop(iPad)
+  = 6.times do
+    = render  "components/skillCard"
