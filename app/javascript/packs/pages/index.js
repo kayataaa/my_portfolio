@@ -1,24 +1,18 @@
 import { gsap, TweenMax } from "gsap";
 import Vue from 'vue'
 import App from '../../app.vue'
-import Card from '../components/card.vue'
 
 function appendVueComp() {
   const app = new Vue({
     render: h => h(App)
   }).$mount()
 
-  const card2 = new Vue({
-    render: h => h(Card)
-  }).$mount()
   const article = document.body.querySelector('.o-article.-sec')
   const card = document.body.querySelector('.new-card')
 
   if (article) {
     article.insertBefore(app.$el, card)
   }
-
-  // document.body.appendChild(card2.$el)
 }
 
 function logo() {
