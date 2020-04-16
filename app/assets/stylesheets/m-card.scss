@@ -3,17 +3,17 @@
   height: 350px;
   width: 100%;
   img {
-    height: 348px;
+    height: 100%;
     width: 348px;
-    object-fit: contain;
+    object-fit: cover;
   }
   &.-square {
     height: 348px;
     width: 348px;
     img {
-      height: 348px;
+      height: 100%;
       width: 348px;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 }
