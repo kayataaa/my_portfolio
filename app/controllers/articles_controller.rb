@@ -3,8 +3,14 @@ class ArticlesController < ApplicationController
     @article = Article.new article_params
     if @article.save
       render :create, notice: 'article was created'
+
+      binding.pry
+
     else
       render :create, notice: "article wasn't created"
+
+      binding.pry
+
     end
   end
 

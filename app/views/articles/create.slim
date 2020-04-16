@@ -1,0 +1,23 @@
+h1 Articles#create
+p Find me in app/views/articles/create.html.slim
+= if flash[:notice]
+  = flash[:notice]
+div.o-form
+= form_with(model: @article, url: articles_create_path) do |article|
+  div.o-form__textarea
+    = article.label(:description, "description")
+    = article.text_area(:description, size: "50x10")
+  div.o-form__textarea
+    = article.label(:sub_description, "sub_description")
+    = article.text_area(:sub_description, size: "50x10")
+  div.o-form__textarea
+    = article.label(:tag_name, "tag_name")
+    = article.select(:tag_name, options_for_select(["top", "work", "skill"]))
+  = article.fields_for :tech_skill_memo, index: article.object.id do |memo|
+    div.o-form__textarea
+      = memo.text_area(:url, size: "50x10")
+    div.o-form__textarea
+      = memo.text_area(:skill_memo, size: "50x10")
+      / = hidden_field_tag (:article_id, article.id)
+  div.o-form__textarea
+    = submit_tag("create")
