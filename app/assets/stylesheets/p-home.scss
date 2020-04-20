@@ -1,12 +1,16 @@
 .p-home {
   background: #655F5A;
-  margin: 0 80px;
+  .o-header {
+    height: 23vh;
+  }
   .m-menu ul li {
     font-family: 'labtop-secundo';
     font-size: 34px;
   }
   .a-title.-pageTop {
     color: #fff;
+    padding-top: 24vh;
+    padding-bottom: 3vh;
   }
   .o-article {
     display: flex;
