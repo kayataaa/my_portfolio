@@ -1,3 +1,12 @@
+$texts: (
+  bike: "バイク好きです。よく1人でお出かけしたりしています。",
+  game: "ホラゲとシューティングゲームが好きです。バイオハザードシリーズや最近はWorld War Zに手を出しました。",
+  spa: "Vue.jsを使ったSPAアプリを作りました。お手軽にできるのがいいですね。",
+  github: "技術ブログをやっています。マサカリお待ちしています。",
+  buncho: "文鳥が好きです。鳥アレルギー持ちですが。",
+  flower: "遠出先でよく花の写真を取ります。PhotoShopで加工するのが楽しいです。"
+);
+
 .m-card {
   background: #fff;
   height: 350px;
@@ -10,10 +19,29 @@
   &.-square {
     height: 348px;
     width: 348px;
+    @each $key, $text in $texts {
+      &.-#{$key}:hover:before {
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
+        font-family: 'クレー', '游明朝体', 'ヒラギノ明朝 ProN';
+        position: absolute;
+        content: $text;
+        padding: 12px;
+      }
+    }
     img {
       height: 100%;
       width: 348px;
       object-fit: cover;
+      &:hover {
+        -webkit-filter: grayscale(0) blur(0);
+        filter: grayscale(0) blur(0);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        -webkit-filter: grayscale(60%) blur(70px);
+        filter: grayscale(60%) blur(70px);
+      }
     }
   }
 }

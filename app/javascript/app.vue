@@ -4,7 +4,7 @@
       <img v-bind:src="require('../assets/images/new.PNG')"/>
     </div>
     <h2 class="a-title">What's new</h2>
-    <h3 class="a-title -sub">2020.04.15 | モーダルを更新しました！</h3>
+    <h3 class="a-title -sub">2020.04.20 | Aboutページを更新しました！</h3>
     <button @click="clickEvent">...</button>
     <modal @from-child="handler()" v-show="show"></modal>
   </div>

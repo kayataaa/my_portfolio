@@ -1,14 +1,30 @@
 .a-link {
   color: #707070;
-  :hover {
-    color: #414040;
-    transition: 0.3s;
+  &:hover {
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%);
+    img {
+      -webkit-filter: grayscale(0) blur(0);
+      filter: grayscale(0) blur(0);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      -webkit-filter: grayscale(60%) blur(2px);
+      filter: grayscale(60%) blur(2px);
+    }
   }
   &.-nav {
     color: #fff;
-    :hover {
-      color: rgba(255, 255, 255, 0.356)
-
+    &:hover {
+      -webkit-filter: grayscale(0) blur(0);
+      filter: grayscale(0) blur(0);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      -webkit-filter: grayscale(60%) blur(2px);
+      filter: grayscale(60%) blur(2px);
     }
   }
 }
