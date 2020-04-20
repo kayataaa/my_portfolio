@@ -30,7 +30,7 @@ section.o-article
       div.a-picture
         = image_tag  "hanami.png"
       h2.a-title Hanami
-      = link_to  "https://github.com/ixap2i/hanami" do
+      = link_to  "https://github.com/ixap2i/hanami", class: "a-link" do
         = image_tag  "github.jpg", class: "a-logo -octcat"
         span On GitHub
 
@@ -39,7 +39,7 @@ section.o-article
       div.a-picture
         = image_tag  "andro.png"
       h2.a-title Instagram Sample App
-      = link_to  "https://github.com/ixap2i/instagram-sample-app" do
+      = link_to  "https://github.com/ixap2i/instagram-sample-app", class: "a-link" do
         = image_tag  "github.jpg", class: "a-logo -octcat"
         span On GitHub
 
@@ -49,7 +49,7 @@ section.o-article
         = image_tag  "msa.png"
         /  style="background: url(gixxer1.jpg)"
       h2.a-title My Single App
-      = link_to  "https://github.com/ixap2i/single-page" do
+      = link_to  "https://github.com/ixap2i/single-page", class: "a-link" do
         = image_tag  "github.jpg", class: "a-logo -octcat"
         span On GitHub
 
@@ -58,6 +58,13 @@ section.o-article
       div.a-picture
         = image_tag  "floap.png"
       h2.a-title Floap
-      = link_to  "https://github.com/ixap2i/floap" do
+      = link_to  "https://github.com/ixap2i/floap", class: "a-link" do
         = image_tag  "github.jpg", class: "a-logo -octcat"
         span On GitHub
+
+    div.m-card
+      div.a-picture
+        = image_tag  "generics.png"
+      h2.a-title ジェネリクスについて
+      = link_to  "https://www.slideshare.net/ssuser34abd0/ss-232310580", class: "a-link" do
+        span On Slides Share

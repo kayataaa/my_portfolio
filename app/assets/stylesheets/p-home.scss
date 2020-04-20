@@ -26,7 +26,10 @@
       width: 348px;
       padding: 10px 10px 35px 10px;
       position: relative;
+      height: 400px;
+      overflow-y: scroll;
       &.-square {
+        height: initial;
         padding: initial;
         overflow: hidden;
       }
