@@ -56,3 +56,14 @@
     padding-top: 30vh;
   }
 }
+
+@media only screen and (max-width:500px) {
+  .p-home {
+    .o-header {
+      height: 10vh;
+      .a-logo__wrap {
+        display: none;
+      }
+    }
+  }
+}
