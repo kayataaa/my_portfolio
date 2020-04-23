@@ -6,6 +6,14 @@
   &.-pageTop {
     text-align: center;
   }
+  &.-workTag {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 2vh;
+    &:nth-child(2) {
+      padding-top: 30vh;
+    }
+  }
   &.-desc {
     font-family: Myanmar Sangam MN;
     display: block;

@@ -2,6 +2,8 @@
   background:#847F7B;
   padding: 5px 13px;
   margin-right: 5px;
+  &.-alphabet {
+  }
   &-2 {
     background:#847F7B;
     padding: 5px 13px;
@@ -9,13 +11,35 @@
   }
   &.-octcat {
     background: initial;
-    height: 30px;
-    width: 30px;
+    height: 174px;
+    width: 174px;
     padding: initial;
     margin-left: 1em;
+    stroke-width:0.01em;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    animation: fill-in 1s linear both;
+    animation-iteration-count: infinite;
+    path {
+      // fill-opacity:0;
+      // stroke:#000;
+      stroke-width:1px;
+      stroke-dasharray: 66;
+    }
+    @keyframes fill-in {
+      from {
+        stroke-dashoffset: 0;
+      }
+      to {
+        fill-opacity: 1;
+        stroke-dashoffset: 500;
+      }
+    }
   }
   &__wrap {
     display: flex;
     margin-top: 2vh;
   }
 }
+
