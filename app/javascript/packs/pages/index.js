@@ -1,6 +1,7 @@
 import { gsap, TweenMax } from "gsap";
 import Vue from 'vue'
 import App from '../../app.vue'
+import AOS from 'aos'
 
 function appendVueComp() {
   const app = new Vue({
@@ -17,7 +18,7 @@ function appendVueComp() {
 
 function logo() {
   const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5});
-  const logo = document.querySelectorAll(".a-logo");
+  const logo = document.querySelectorAll(".a-logo.-alphabet");
   var grid = [7,15];
 
   var selections = {from: "left", axis: null, ease: "none"};
@@ -38,9 +39,15 @@ function logo() {
   });
 }
 
+// function aos() {
+//   AOS.init();
+//   console.log(AOS);
+// }
+
 function load() {
   appendVueComp();
   logo();
+  // aos();
 }
 
 window.onload = load;
