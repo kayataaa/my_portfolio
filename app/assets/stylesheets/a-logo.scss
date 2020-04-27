@@ -15,26 +15,37 @@
     width: 174px;
     padding: initial;
     margin-left: 1em;
-    stroke-width:0.01em;
-    stroke-dasharray: 0;
-    stroke-dashoffset: 0;
-    stroke-width: 1;
-    animation: fill-in 1s linear both;
-    animation-iteration-count: infinite;
-    path {
-      // fill-opacity:0;
-      // stroke:#000;
-      stroke-width:1px;
-      stroke-dasharray: 66;
+   path {
+      // fill:#000;
+      // fill-opacity:1;
+      stroke-width:8px;
+      stroke-dasharray: 3;
+      animation: fill-in ease 3s;
+      animation-iteration-count: infinite;
     }
     @keyframes fill-in {
-      from {
-        stroke-dashoffset: 0;
+      0% {
+        fill: rgba(255, 255, 255, 0);
+        stroke-dasharray: 0;
       }
-      to {
-        fill-opacity: 1;
-        stroke-dashoffset: 500;
+      30% {
+        // fill: rgba(0, 0, 0, 0.747);
+        stroke-dasharray: 30;
       }
+      50% {
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 66;
+      }
+      100% {
+        fill: rgba(255, 255, 255, 0);
+        stroke-dasharray: 13z;
+      }
+      // to {
+      //   stroke-dashoffset: 0;
+      // }
+      // from {
+      //   stroke-dashoffset: 287;
+      // }
     }
   }
   &__wrap {

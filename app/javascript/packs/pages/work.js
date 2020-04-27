@@ -1,7 +1,4 @@
 import Vue from 'vue'
-import WorkCardPublic from '../components/workCardPublic.vue'
-import WorkCardPrivate from '../components/workCardPrivate.vue'
-
 function appendVueComp() {
   var modalTarget = document.body.querySelectorAll('.m-card.-workTarget')
 

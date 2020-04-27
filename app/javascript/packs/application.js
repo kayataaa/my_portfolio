@@ -6,6 +6,7 @@
 require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("gsap")
+require("aos")
 require("channels")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
